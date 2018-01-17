@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Josh McCollum Portfolio Site</title>
+		<meta name="viewport" content="width=device-width, initial-scale+1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="portfolio.js"></script>
+	</head>
+	<body>
+
+		<header class="header">
+			<!--Three brass poles floating over header header columns-->
+			<section class="poles">
+				<img class="headerBrassPoles" src="static/brass.png">
+				<img class="headerBrassPoles" src="static/brass.png">
+				<img class="headerBrassPoles" src="static/brass.png">
+			</section>
+
+			<!--column holding name and tringle-->
+			<container class="header-column1">
+				<div class="name">
+					<h1>Josh McCollum</h1>
+				</div>
+
+				<figure class="header-triangle" id="triangle-bottomleft"></figure>
+			</container>
+
+			<!--column holding rectangle and job title-->
+			<container class="header-column2">
+				<figure class="header-rectangle" id="rectangle"></figure>
+
+				<container class="job-title">
+					<h3>full stack developer</h3>
+				</container>
+			</container>
+		</header>
+
+		<!--Navigation content-->
+		<!--<img class="contentBrassPoles" src="static/brass.png">-->
+		<ul class="content-accordion">
+			<li class="content-panel" id="projects">
+				<img class="contentBrassPoles" src="static/brass.png">
+				Projects
+				<p>PeePal, rental app, Dev Services LMS</p>
+			</li>
+			<li class="content-panel" id="bio">
+				<img class="contentBrassPoles" src="static/brass.png">
+				Bio
+				<p>I'm a guy who like to make things</p>
+			</li>
+			<li class="content-panel" id="contact">
+				<img class="contentBrassPoles" src="static/brass.png">
+				Contact
+				<p>LinkedIn, GitHub, email</p>
+			</li>
+		</ul>
+	</body>
+	<footer class="footer">
+				<!--navigaption bar-->
+		<ul class="navigation">
+			<li class="nav-button" title="contact">Contact</li>
+			<li class="nav-button" title="bio">Bio</li>
+			<li class="nav-button" title="projects">Projects</li>
+		</ul>
+	</footer>
+</html>
