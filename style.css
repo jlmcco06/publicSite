@@ -3,6 +3,7 @@ body {
 	width: 100%;
 	margin-left: 0;
 	margin-right: 0;
+	overflow-x: hidden;
 	display: -webkit-box;
   	display: -moz-box;
   	display: -ms-flexbox;
@@ -13,7 +14,22 @@ body {
   	justify-content: space-around;
 }
 
-header, footer {
+header {
+	color: white;
+	width: 100%;
+	height: 85vh;
+	padding-bottom: 3%;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+  	-webkit-flex-flow: row wrap;
+  	justify-content: space-around;
+}
+
+footer {
 	width: 100%;
 	height: 10%;
 	padding-bottom: 3%;
@@ -26,9 +42,20 @@ header, footer {
   	-webkit-flex-flow: row wrap;
   	justify-content: space-around;
 }
-
+.video-wrap {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 85vh;
+	overflow: hidden;
+}
+video {
+	width: 100%;
+}
 .header-column1 {
-	width: 50%;
+	width: 60%;
+	height: 85vh;
 	display: -webkit-box;
   	display: -moz-box;
   	display: -ms-flexbox;
@@ -50,7 +77,7 @@ header, footer {
 
 h1 {
 	width: 40%;
-	font-size: 5em;
+	font-size: 400%;
 }
 
 .header-triangle {
@@ -63,10 +90,12 @@ h1 {
 	border-bottom: 300px solid #18556b;
 	border-right: 300px solid transparent;
 	opacity: 0.9;
+	float: right;
 }
 
 .header-column2 {
-	width: 50%;
+	width: 40%;
+	height: 85vh;
 	float: right;
 	display: -webkit-box;
   	display: -moz-box;
@@ -84,20 +113,23 @@ h1 {
 	position: relative;
 }
 #rectangle {
-	width: 1000px;
-	height: 500px;
+	width: 900px;
+	height: 400px;
 	background: #7a1919;
 	opacity: 0.9;
 	float: right;
-	max-width: 90%;
+	max-width: 60%;
 }
 
 .job-title {
 	text-align: center;
-	float: top;
+	font-weight: bold;
+	bottom: 0;
+	left: 0;
 	height: 30%;
 	font-size: 1.5em;
 	z-index: 999;
+	padding-top: 50%;
 
 }
 
@@ -105,7 +137,7 @@ h1 {
 	width: 100%;
 	height: 10%;
 	position: absolute;
-	padding-top: 25em;
+	padding-top: 38%;
 	z-index: 998;
 	float: left;
 }
@@ -113,12 +145,6 @@ h1 {
 	padding-bottom: 0.5%;
 	height: 8px;
 	width: 100%;
-}
-
-#job-title {
-	width: 500px;
-	max-width: 40%;
-	float: right;
 }
 
 .navigation {
@@ -174,7 +200,8 @@ img.computer-image {
 	border-radius: 10px;
 	width: 30%;
 	float: left;
-	margin: 1%;
+	margin: 2%;
+	margin-top: 4%;
 }
 
 p#projects-summary {
@@ -183,16 +210,17 @@ p#projects-summary {
 	color: white;
 	float: left;
 	margin: 1%;
+	font-weight: normal;
 }
 
 #mobile-container {
 	overflow-y: scroll;
-	width: 20%;
-	height: 70%;
+	width: 15%;
+	height: 65%;
 	max-height: 400px;
 	float: left;
 	border-radius: 10px;
-	margin: 1%;
+	margin: 2%;
 }
 
 img.mobile-image {
@@ -218,7 +246,8 @@ h2.panel-header {
 .biography {
 	width: 100%;
 	color: white;
-
+	font-weight: normal;
+	font-size: 0.5em;
 }
 
 .bio-image {
@@ -229,4 +258,63 @@ h2.panel-header {
 #contact {
 	background: #18556b;
 	color: #062935;
+}
+
+.contact-links li {
+	display: inline;
+	color: white;
+	list-style: none;
+	text-align: center;
+	padding-right: 5%;
+}
+
+@media only screen and (min-width: 1200px) {
+	.poles {
+		padding-top: 15%;
+	}
+
+	.job-title {
+		padding-top: 50%;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	header {
+		height: 55vh;
+	}
+	.video-wrap {
+		height: 55vh;
+	}
+	.header-column1 {
+		height: 55vh;
+	}
+	.header-column2 {
+		height: 60vh;
+	}
+	.name {
+		width: 50%;
+		height: 30%;
+		float: right;
+		text-align: right;
+		padding-left: 10%;
+		z-index: 1000;
+	}
+
+	h1 {
+		width: 40%;
+		font-size: 300%;
+	}
+
+	.job-title {
+		padding-top: 5%;
+		font-size: 100%;
+	}
+	#triangle-bottomleft {
+		width: 0;
+		height: 0;
+		border-bottom: 200px solid #18556b;
+		border-right: 200px solid transparent;
+		opacity: 0.9;
+		float: right;
+	}
 }
